@@ -1,0 +1,13 @@
+apiVersion: kopf.dev/v1
+kind: MLFlow
+metadata:
+  name: lstm-pipeline
+spec:
+  pipeline:
+    stage1:
+      name: data-preprocess
+      step:
+      - name: time-parser
+        mlfun: james759426/time-parser:0.0.1
+      - name: data-clean
+        mlfun: james759426/data-clean:0.0.1
