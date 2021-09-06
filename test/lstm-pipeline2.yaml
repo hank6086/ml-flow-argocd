@@ -1,7 +1,7 @@
 apiVersion: kopf.dev/v1
 kind: MLFlow
 metadata:
-  name: lstm-pipeline2
+  name: lstm-pipeline2-1
 spec:
   pipeline:
     stage1:
